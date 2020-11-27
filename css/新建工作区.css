@@ -1,21 +1,21 @@
 body {background-color: whitesmoke}
 img {text-align: center}
 a.pos1{
-    background:black;
+    background: #323232;;
     color:white;
     position:fixed;
     left:250px;
     top:640px
 }
 a.pos2{
-    background:black;
+    background: #323232;
     color:white;
     position:fixed;
-    left:376px;
+    left:385px;
     top:640px
 }
 a.pos3{
-    background:black;
+    background: #323232;
     color:white;
     position:fixed;
     left:436px;
