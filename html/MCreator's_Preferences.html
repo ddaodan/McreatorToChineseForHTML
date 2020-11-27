@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        /* CSS样式制作 */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        a{ text-decoration:none; color:black;}
+
+        /*a:hover {
+            text-decoration: none;
+            color: #336699;
+        }*/
+        /*#tab {
+            width: 270px;
+            padding: 5px;
+            height: 150px;
+            margin: 20px;
+        }*/
+        #tab ul {
+            background: #323232;
+            color: white;
+            position: fixed;
+            left: 3px;
+            top: 40px;
+            width: 122px;
+            line-height: 25px
+        }
+
+        #tab ul li {
+            background: #323232;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+            height: 27px;
+            line-height: 27px;
+            padding: 0px 5px;
+            width: 98%;
+        }
+
+        #tab ul li.on {
+            background-color: rgb(147, 197, 75);
+        }
+
+        /*#tab div {
+            height: 100px;
+            width: 250px;
+            line-height: 24px;
+            border-top: none;
+            padding: 1px;
+            border: 1px solid #336699;
+            padding: 10px;
+        }*/
+
+        .hide {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // JS实现选项卡切换
+        window.onload = function () {
+            var myTab = document.getElementById("tab");    //整个div
+            var myUl = myTab.getElementsByTagName("ul")[0];//一个节点
+            var myLi = myUl.getElementsByTagName("li");    //数组
+            var myDiv = myTab.getElementsByTagName("div"); //数组
+
+            for (var i = 0; i < myLi.length; i++) {
+                myLi[i].index = i;
+                myLi[i].onclick = function () {
+                    for (var j = 0; j < myLi.length; j++) {
+                        myLi[j].className = "off";
+                        myDiv[j].className = "hide";
+                    }
+                    this.className = "on";
+                    myDiv[this.index].className = "show";
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- HTML页面布局 -->
+    <div id="tab">
+        <ul>
+            <li class="on">用户界面</li>
+            <li class="off">备份和保存</li>
+            <li class="off">块状编辑</li>
+            <li class="off">代码编辑器</li>
+            <li class="off">Gradle并运行</li>
+            <li class="off">基岩环境</li>
+            <li class="off">通知</li>
+            <li class="off">UI背景</li>
+            <li class="off">程序模板</li>
+            <li class="off">AI建设者模板</li>
+            <li class="off">纹理模板</li>
+            <li class="off">管理插件</li>
+        </ul>
+        <div id="d1" class="show">
+            <img src="../pictures/User_interface.png">
+            <a href="#" onClick="javascript:history.back(-1);" style="color: white;position: fixed;left: 820px;top: 565px;">×</a>
+        </div>
+        <div id="d2" class="hide">
+            <img src="../pictures/Backups_and_saving.png">
+        </div>
+        <div id="d3" class="hide">
+            <img src="../pictures/Blockly_editor.png">
+        </div>
+        <div id="d4" class="hide">
+            <img src="../pictures/Code_editor.png">
+        </div>
+        <div id="d5" class="hide">
+            <img src="../pictures/Gradle_and_run.png">
+        </div>
+        <div id="d6" class="hide">
+            <img src="../pictures/Bedrock_setting.png">
+        </div>
+        <div id="d7" class="hide">
+            <img src="../pictures/Notifications.png">
+        </div>
+        <div id="d8" class="hide">
+            <img src="../pictures/Ui_backgrounds.png">
+        </div>
+        <div id="d9" class="hide">
+            <img src="../pictures/Procedure_templates.png">
+        </div>
+        <div id="d10" class="hide">
+            <img src="../pictures/AI_builder_templates.png">
+        </div>
+        <div id="d11" class="hide">
+            <img src="../pictures/Texture_templates.png">
+        </div>
+        <div id="d12" class="hide">
+            <img src="../pictures/Manage_plugins.png">
+        </div>
+    </div>
+
+</body>
+
+</html>
