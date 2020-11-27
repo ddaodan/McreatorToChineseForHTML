@@ -1,0 +1,44 @@
+body {background-color: whitesmoke}
+img {text-align: center}
+a.pos1{
+    background:black;
+    color:white;
+    position:fixed;
+    left:290px;
+    top:300px
+}
+a.pos2{
+    background: black;
+    color:white;
+    position:fixed;
+    left:400px;
+    top:300px
+}
+a.pos3{
+    background: black;
+    color:white;
+    position:fixed;
+    left:510px;
+    top:300px
+}
+a.pos4{
+    background: black;
+    color:white;
+    position:fixed;
+    left:620px;
+    top:300px
+}
+a.pos5{
+    background: black;
+    color:white;
+    position:fixed;
+    left:560px;
+    top:350px
+}
+a.pos6{
+    background: black;
+    color:white;
+    position:fixed;
+    left:640px;
+    top:350px
+}
